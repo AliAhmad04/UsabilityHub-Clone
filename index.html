@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Complete Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
             <a href="#" class="company-logo">
                 <img src="assets/asset 1.png" alt="Company Logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
@@ -36,6 +37,9 @@
                     <li><a href="#" class="hover-link primary-button">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
     </nav>
 
@@ -136,15 +140,15 @@
         </div>
     </section>
     <section class="big-feature-section">
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container" id="second-big-feature">
+            <div class="feature-img">
+                <img src="./assets/asset 21.png" alt="">
+            </div>
             <div class="feature-desc flex">
                 <h4>Easier decision making for</h4>
                 <h3>Product managers</h3>
                 <p>Ensure you're delivering the right features to the right customers by validating product concepts with your target audience.
                 </p>
-            </div>
-            <div class="feature-img">
-                <img src="./assets/asset 21.png" alt="">
             </div>
         </div>
     </section>
@@ -240,6 +244,16 @@
     </div>
     
     <script src="https://kit.fontawesome.com/f122068401.js" crossorigin="anonymous"></script>
+
+    <script>
+        const toggleButton = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
+
 </body>
 
 </html>
