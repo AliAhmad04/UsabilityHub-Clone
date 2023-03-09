@@ -31,7 +31,8 @@
     .nav-links ul {
         flex-direction: column;
     }
-
+    
+    
     .examples-area {
         gap: 20px;
     }
@@ -45,6 +46,8 @@
         padding-block: 80px;
     }
 }
+
+
 
 
 
@@ -88,6 +91,9 @@
     }
 
 }
+
+
+
 
 @media screen and (max-width: 479px) {
     :root {
